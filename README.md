@@ -14,7 +14,7 @@
 
 
 ## Dataset predictions
-I was able to predict attack values with a r-squared of 99.99998675959489%. I attempted regularization via Ridge, OLS, and Lasso but found no benefit to adding regulariztion to our models.
+I was able to predict attack values with a r-squared of xx.xxx%. I attempted regularization via Ridge, OLS, and Lasso but found no benefit to adding regulariztion to our models.
 
 ## Future plans
 The following could be applied in the future
