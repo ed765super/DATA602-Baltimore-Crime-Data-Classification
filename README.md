@@ -1,7 +1,7 @@
-# DATA602 Baltimore Employee Data Classification
+# DATA602 Baltimore Arrest Data Classification
 
-## Data = Baltimore_City_Employee_Salaries.csv
-   Recieved from Baltimore Open City Database (https://data.baltimorecity.gov/datasets/baltimore-city-employee-salaries/explore)
+## Data = Arrests.csv
+   Recieved from Baltimore Open City Database (https://data.baltimorecity.gov/datasets/619ec10c14b346f784a5a07bad4c43cd_0/about)
    
 ## Project Description:
    Background information and Buisness Question
