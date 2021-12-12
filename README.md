@@ -45,11 +45,21 @@ The 5 number summary, provided the following information:
 
 The Spearman rank correlation test and the chi-squared test results showed that the data that I will be using for modeling had no multicolliniarity with each other
 ## Classification Results
+The models were not able to an accuracy of over 25%. This model would ot be satisfactory to use in procuction if we wanted to try and predict where a crime occured
 
+I initially determined that accuracy would be the most important metric because if the model could accurately determine where a crime will occur, the police department would be able to efficiently delegate their resources to prepare for the perceived crime. If the model was striving for high recall, this could cause bias in policing efforts leading to false incarcerations. This could also lead the department to using unneeded resources in one District while another District is left understaffed.
 
-## Dataset predictions
+## Conclusion
+In this project, I aimed to build a model that could estimate the District where a crime occurred based on the dataset's numerous non-location based variables. The methods that I used did not produce an accuracy rate of over 25%. This did not come anywhere near my 80% threshhold leading me to believe the following:
+- The seven features alone are insufficient to adequately identify the District.
 
+- Insufficient rows were utilized to train the data.
+
+- the methodologies were insufficient to predict the District with just a few columns of data.
 
 ## Future plans
-The following could be applied in the future
-* 
+The following will be applied in the future
+* Semi Supervised Learning
+   * In this project, I attempted to create a model that could predict the District a crime occured from the various non-location based information in the dataset. However, in my attempt, I removed over half the instances by dropping all rows that had a NA value in the District column. Prior to the drop the dataframe had 175923 rows. After droping all rows that had an NA value, 89891 were the number of rows left. I lost 86032 arrests that could have been used to train the model. That is a significant loss in data that I can use to train the model. In the future, I will leave the district how it was prior to the row drop and take a semi-supervised approach during the Modeling, Processing, and Cleaning steps
+* Another Method I will attempt in the future is to use the Support Vector Machine Methodology to see whether we can increase the accuracy score. SVM is a very costly and time consuming method, however with a more powerful computer and more time, I would perform the method similar to how I have it below then include it in my ensemble
+* Another method I plan to use in the future is Adaptive Boosting or ADABOOST. The AdaBoost algorithm is a machine learning approach that is utilized as an Ensemble Method. It manipulates the weights of each of the columns to try and make up for improperly categorized instances. The purpose of ADA Boost in supervised learning is to decrease bias and variation. In layman's terms, the AdaBoost algorithm is a method available to me as a way to increase the accurracy score of the Logistic Regression, SVM, or whatever other method I may learn about in the future.
